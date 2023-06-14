@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+        SDF file upload
+    </title>
+</head>
+
+<body>
+    <h1 class="main_header">
+        Molecule Viewer
+    </h1>
+    <div class="page_navigation">
+        <div id="link_div">
+            <span id="links_span">
+                <button class="link_button">
+                    <a href="index.html" , class="add_align"> Main Menu</a>
+                </button>
+                <button class="link_button">
+                    <a href="add.html" , class="add_align"> Add/Remove an Element</a>
+                </button>
+                <button class="link_button">
+                    <a href="select.html" , class="select_align">Select A Molecule</a>
+                </button>
+            </span>
+        </div>
+    </div>
+    </div> <!-- Ending div for addcomponent-->
+    <h1 class="sub_header">Uploading SDF File</h1>
+    <br><br>
+    <div id="sdf">
+        <form enctype="multipart/form-data" id="sdf_form">
+            <input type="file" id="sdf_file" name="filename" />
+	    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="upload" class="upload"/>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>
+        ADD/REMOVE ELEMENT
+    </title>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="main_header">
+            Molecule Viewer
+        </h1>
+    </div>
+    <div class="page_navigation">
+        <div id="link_div">
+            <span id="links_span">
+                <button class="link_button">
+                    <a href="index.html" , class="add_align"> Main Menu</a>
+                </button>
+                <button class="link_button">
+                    <a href="sdf.html" , class="sdf_align"> upload an SDF File</a>
+                </button>
+                <button class="link_button">
+                    <a href="select.html" , class="select_align"> Select Molecule</a>
+                </button>
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="add">
+        <h1 class="sub_header">
+            Add Element
+        </h1>
+        <form id="elements-add" , enctype="multipart/form-data">
+            <span>
+                Element No:&nbsp
+                <select id="element_no"></select>
+                <script>
+                    var option_nos = document.getElementById("element_no");
+                    for (var i = 1; i < 118; i++){
+                        var no_option = document.createElement("option");
+                        no_option.value = i;
+                        no_option.text = i;
+                        option_nos.append(no_option);
+                    }
+                </script>
+            </span>
+            <br><br>
+            Element Code:&nbsp
+            <select id="element_code">
+                <option value="H">H</option>
+                <option value="He">He</option>
+                <option value="Li">Li</option>
+                <option value="Be">Be</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="F">F</option>
+                <option value="Ne">Ne</option>
+                <option value="Na">Na</option>
+                <option value="Mg">Mg</option>
+                <option value="Al">Al</option>
+                <option value="Si">Si</option>
+                <option value="P">P</option>
+                <option value="S">S</option>
+                <option value="Cl">Cl</option>
+                <option value="Ar">Ar</option>
+                <option value="K">K</option>
+                <option value="Ca">Ca</option>
+                <option value="Sc">Sc</option>
+                <option value="Ti">Ti</option>
+                <option value="V">V</option>
+                <option value="Cr">Cr</option>
+                <option value="Mn">Mn</option>
+                <option value="Fe">Fe</option>
+                <option value="Co">Co</option>
+                <option value="Ni">Ni</option>
+                <option value="Cu">Cu</option>
+                <option value="Zn">Zn</option>
+                <option value="Ga">Ga</option>
+                <option value="Ge">Ge</option>
+                <option value="As">As</option>
+                <option value="Se">Se</option>
+                <option value="Br">Br</option>
+                <option value="Kr">Kr</option>
+                <option value="Rb">Rb</option>
+                <option value="Sr">Sr</option>
+                <option value="Y">Y</option>
+                <option value="Zr">Zr</option>
+                <option value="Nb">Nb</option>
+                <option value="Mo">Mo</option>
+                <option value="Tc">Tc</option>
+                <option value="Ru">Ru</option>
+                <option value="Rh">Rh</option>
+                <option value="Pd">Pd</option>
+                <option value="Ag">Ag</option>
+                <option value="Cd">Cd</option>
+                <option value="In">In</option>
+                <option value="Sn">Sn</option>
+                <option value="Sb">Sb</option>
+                <option value="Te">Te</option>
+                <option value="I">I</option>
+                <option value="Xe">Xe</option>
+                <option value="Cs">Cs</option>
+                <option value="Ba">Ba</option>
+                <option value="La">La</option>
+                <option value="Ce">Ce</option>
+                <option value="pr">pr</option>
+                <option value="Nd">Nd</option>
+                <option value="Pm">Pm</option>
+                <option value="Sm">Sm</option>
+                <option value="Eu">Eu</option>
+                <option value="Gd">Gd</option>
+                <option value="Tb">Tb</option>
+                <option value="Dy">Dy</option>
+                <option value="Ho">Ho</option>
+                <option value="Er">Er</option>
+                <option value="Tm">Tm</option>
+                <option value="Yb">Yb</option>
+                <option value="Lu">Lu</option>
+                <option value="Hf">Hf</option>
+                <option value="Ta">Ta</option>
+                <option value="W">W</option>
+                <option value="Re">Re</option>
+                <option value="Os">Os</option>
+                <option value="Ir">Ir</option>
+                <option value="Pt">Pt</option>
+                <option value="Au">Au</option>
+                <option value="Hg">Hg</option>
+            </select>
+            </span>
+            <br><br>
+            Element Name:
+            <select id="element_name">
+                <option value="Hydrogen">Hydrogen</option>
+                <option value="Helium">Helium</option>
+                <option value="Lithium">Lithium</option>
+                <option value="Beryllium">Beryllium</option>
+                <option value="Boron">Boron</option>
+                <option value="Carbon">Carbon</option>
+                <option value="Nitrogen">Nitrogen</option>
+                <option value="Oxygen">Oxygen</option>
+                <option value="Fluorine">Fluorine</option>
+                <option value="Neon">Neon</option>
+                <option value="Sodium">Sodium</option>
+                <option value="Magnesium">Magnesium</option>
+                <option value="Aluminium">Aluminium</option>
+                <option value="Silicon">Silicon</option>
+                <option value="Phosphorus">Phosphorus</option>
+                <option value="Sulfur">Sulfur</option>
+                <option value="Chlorine">Chlorine</option>
+                <option value="Argon">Argon</option>
+                <option value="Potassium">Potassium</option>
+                <option value="Calcium">Calcium</option>
+                <option value="Scandium">Scandium</option>
+                <option value="Titanium">Titanium</option>
+                <option value="Vanadium">Vanadium</option>
+                <option value="Chromium">Chromium</option>
+                <option value="Manganese">Manganese</option>
+                <option value="Iron">Iron</option>
+                <option value="Cobalt">Cobalt</option>
+                <option value="Nickel">Nickel</option>
+                <option value="Copper">Copper</option>
+                <option value="Zinc">Zinc</option>
+                <option value="Gallium">Gallium</option>
+                <option value="Germanium">Germanium</option>
+                <option value="Arsenic">Arsenic</option>
+                <option value="Selenium">Selenium</option>
+                <option value="Bromine">Bromine</option>
+                <option value="Krypton">Krypton</option>
+                <option value="Rubidium">Rubidium</option>
+                <option value="Strontium">Strontium</option>
+                <option value="Yttrium">Yttrium</option>
+                <option value="Zirconium">Zirconium</option>
+                <option value="Niobium">Niobium</option>
+                <option value="Molybdenum">Molybdenum</option>
+                <option value="Technetiumc">Technetium</option>
+                <option value="Ruthenium">Ruthenium</option>
+                <option value="Rhodium">Rhodium</option>
+                <option value="Palladium">Palladium</option>
+                <option value="Silver">Silver</option>
+                <option value="Cadmium">Cadmium</option>
+                <option value="Indium">Indium</option>
+                <option value="Tin">Tin</option>
+                <option value="Antimony">Antimony</option>
+                <option value="Tellurium">Tellurium</option>
+                <option value="Iodine">Iodine</option>
+                <option value="Xenon">Xenon</option>
+                <option value="Caesium">Caesium</option>
+                <option value="Barium">Barium</option>
+                <option value="Lanthanum">Lanthanum</option>
+                <option value="Cerium">Cerium</option>
+                <option value="praseodymium">praseodymium</option>
+                <option value="Neodymium">Neodymium</option>
+                <option value="Promethium">Promethium</option>
+                <option value="Samarium">Samarium</option>
+                <option value="Europium">Europium</option>
+                <option value="Gadolinium">Gadolinium</option>
+                <option value="Terbium">Terbium</option>
+                <option value="Dysprosium">Dysprosium</option>
+                <option value="Holmium">Holmium</option>
+                <option value="Erbium">Erbium</option>
+                <option value="Thulium">Thulium</option>
+                <option value="Ytterbium">Ytterbium</option>
+                <option value="Lutetium">Lutetium</option>
+                <option value="Hafnium">Hafnium</option>
+                <option value="Tantalum">Tantalum</option>
+                <option value="Tungsten">Tungsten</option>
+                <option value="Rhenium">Rhenium</option>
+                <option value="Osmium">Osmium</option>
+                <option value="Iridium">Iridium</option>
+                <option value="Plantinum">Platinum</option>
+                <option value="Gold">Gold</option>
+                <option value="Mercury">Mercury</option>
+            </select>
+            </span>
+            <br> <br>
+            <span>
+                <span>
+                    Colour 1:
+                    <input type="color" , id="element_colour_one">
+                </span>
+                <br> <br>
+                <span>
+                    Colour 2:
+                    <input type="color" , id="element_colour_two">
+                </span>
+                <br><br>
+                <span>
+                    Colour 3:
+                    <input type="color" , id="element_colour_three">
+                </span>
+                <br><br>
+                <span>
+                    Radius:&nbsp;
+                    <input type="text" , id="radius">
+                </span>
+                <br><br>
+                <input type="submit" value="submit">
+        </form>
+    </div> <!-- Ending div for addcomponent-->
+    <h1 class="sub_header">
+        Remove Element
+    </h1>
+    <div id="remove">
+        <form id="remove-element" , enctype="multipart/form-data">
+            <span>
+                Element No:&nbsp
+                <input type="text" id="rm_element_no">
+            </span>
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
+

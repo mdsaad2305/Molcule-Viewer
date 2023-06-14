@@ -1,0 +1,127 @@
+body{
+    background-color: #90E0EF;
+}
+
+.molecule-img{
+	width: 200px;
+    height: 100px;
+}
+
+h1.main_header{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+
+
+h1.sub_header{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+div#link_div{
+    text-align: center;
+}
+
+a.add_align{
+    font-size: 20px;
+    background-color: rgb(0, 145, 255);
+
+}
+
+a.select_align{
+    font-size: 20px;
+    background-color: rgb(0, 145, 255);
+}
+
+a.sdf_align{
+    font-size: 20px;
+    background-color: rgb(0, 145, 255);
+}
+
+body{
+    background-color: #90E0EF;
+}
+
+h1.main_header{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+div#link_div{
+    text-align: center;
+}
+
+a.add_align{
+    background-color: rgb(0, 145, 255);
+
+}
+
+a.select_align{
+    background-color: rgb(0, 145, 255);
+}
+
+a.sdf_align{
+    background-color: rgb(0, 145, 255);
+}
+
+button.link_button{
+    padding: 10px;
+    display:inline-block;
+    font-weight:  390;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: rgb(0, 145, 255);
+}
+
+#add{
+    float: left;
+    width: 50%;
+}
+
+#remove{
+    float: left;
+    width: 50%;
+}
+
+#elements-add{
+    vertical-align: middle;
+    text-align: center;
+}
+
+#remove-element{
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.sdf{
+    vertical-align: middle;
+    text-align: center;
+}
+#sdf_file{
+    padding: 10px;
+    display:inline-block;
+    font-weight:  390;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin: 10px;
+    border: 1px solid;
+    width: 300px;
+    height: 37px;
+}
+
+#sdf_form{
+    position: absolute;
+    left: 40%;
+}
+
+.upload{
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="retrieve.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+        SDF file upload
+    </title>
+</head>
+
+<body>
+    <h1 class="main_header">
+        Molecule Viewer
+    </h1>
+    <div class="page_navigation">
+        <div id="link_div">
+            <span id="links_span">
+                <button class="link_button">
+                    <a href="index.html" , class="add_align"> Main Menu</a>
+                </button>
+                <button class="link_button">
+                    <a href="add.html" , class="sdf_align"> Add/Remove an Element</a>
+                </button>
+                <button class="link_button">
+                    <a href="sdf.html" , class="select_align">Upload an SDF File</a>
+                </button>
+            </span>
+        </div>
+    </div>
+    <h1 class="sub_header">selecting Molecule</h1>
+    <div id="select">
+        <form id = "choose-molecule", enctype="multipart/form-data">
+            <select id="molecule-select"></select>
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+	<span id="svg-image"> </span>
+    </div>
+</body>
+</html>
